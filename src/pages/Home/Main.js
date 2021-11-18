@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
 
 export default function Main(props) {
     const theme = useTheme();
@@ -16,7 +17,9 @@ export default function Main(props) {
                     </p>
 
                     <div className="image_holder">
-                        <img src="images/img6.jpg" />
+                        <Box elevation={8}>
+                            <img src="images/img6.jpg" />
+                        </Box>
                     </div>
                 </article>
 

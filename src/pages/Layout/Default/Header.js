@@ -1,11 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, makeStyles } from '@mui/styles';
 import Box from '@mui/material/Box';
 
 import { useNavigate, useLocation } from 'react-router-dom';
 
+import jquery from 'jquery';
+import $ from 'jquery';
+
 export default function Header(props) {
+  const outerDivRef = useRef();
+  const [scrollY, setScrollY] = useState(0);
+
+  const clickHandler = (pageId) => {
+      
+    // const { deltaY } = e;
+    // const { scrollTop } = outerDivRef.current; // 스크롤 위쪽 끝부분 위치
+    // const pageHeight = window.innerHeight;
+    // window.scroll(0, offsetTop);
+
+    return (e)=>{
+      e.preventDefault();
+
+      const offsetTop = document.querySelector(pageId).offsetTop;
+
+      console.log(offsetTop);
+
+    }
+    
+  }
+
+  useEffect(()=>{
+    
+    
+
+  });
+
   const navigate = useNavigate()
 
   return (
@@ -20,10 +50,10 @@ export default function Header(props) {
             <span className="fs-4">Cipher Assembly</span>
           </a>
 
-          <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">            
-            <a className="me-3 py-2 text-dark text-decoration-none" href="#main">Home</a>
-            <a className="me-3 py-2 text-dark text-decoration-none" href="#nft">NFT</a>
-            <a className="me-3 py-2 text-dark text-decoration-none" href="#activities">Activities</a>
+          <nav ref={outerDivRef} className="d-inline-flex mt-2 mt-md-0 ms-md-auto">            
+            <a onClick={clickHandler('#main')} className="me-3 py-2 text-dark text-decoration-none">Home</a>
+            <a onClick={clickHandler('#nft')} className="me-3 py-2 text-dark text-decoration-none">NFT</a>
+            <a onClick={clickHandler('#activities')} className="me-3 py-2 text-dark text-decoration-none">Activities</a>
           </nav>
 
         </div>

@@ -14,7 +14,6 @@ import Footer from '../Layout/Default/Footer';
 import Main from './Main';
 import Nft from './Nft';
 import Activities from './Activities';
-import Faq from './Faq';
 
 // img6.jpg
 const styles = {
