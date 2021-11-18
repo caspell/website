@@ -35,7 +35,7 @@ header {
 }
 
 main section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 section .pt-100 {
@@ -52,9 +52,8 @@ section .pt-100 {
     width: 100%;
 }
 
-
 .nft_holder {
-    width: 300px;
+    /* width: 300px; */
     margin: 0 auto;
 }
 
