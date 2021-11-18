@@ -18,7 +18,7 @@ export default function Footer(props) {
     <React.Fragment>
       <footer class="footer mt-auto bg-light text-center">
         <div class="container">
-          <small className="d-block text-muted">Cipher Assembly &copy; 2021 All rights reserved.</small>
+          <small className="d-block text-muted">Cipher Assembly &copy; 2021 <br/> All rights reserved.</small>
         </div>
       </footer>
     </React.Fragment>
