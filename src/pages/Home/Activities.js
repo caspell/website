@@ -25,6 +25,10 @@ export default function Roadmap(props) {
 
                     <h1>Activities</h1>
 
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
+                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+
                     <Timeline position="alternate">
                         <TimelineItem>
                             <TimelineOppositeContent
@@ -42,7 +46,7 @@ export default function Roadmap(props) {
                             </TimelineDot>
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <TimelineContent sx={{ py: '44px', px: 2 }}>
                             <Typography variant="h6" component="span">
                                 Eat
                             </Typography>
@@ -64,7 +68,7 @@ export default function Roadmap(props) {
                             </TimelineDot>
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <TimelineContent sx={{ py: '44px', px: 2 }}>
                             <Typography variant="h6" component="span">
                                 Code
                             </Typography>
@@ -79,7 +83,7 @@ export default function Roadmap(props) {
                             </TimelineDot>
                             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                             </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <TimelineContent sx={{ py: '44px', px: 2 }}>
                             <Typography variant="h6" component="span">
                                 Sleep
                             </Typography>
@@ -94,7 +98,7 @@ export default function Roadmap(props) {
                             </TimelineDot>
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
+                            <TimelineContent sx={{ py: '44px', px: 2 }}>
                             <Typography variant="h6" component="span">
                                 Repeat
                             </Typography>

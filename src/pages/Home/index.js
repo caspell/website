@@ -26,21 +26,21 @@ class Home extends React.Component {
     }
 
     componentDidMount(){
-        fetch('https://us-central1-wunicorns-df883.cloudfunctions.net/helloWorld', {
-            mode: 'no-cors',
-            credentials: 'include',
-            headers:{
-                'Content-Type': 'application/json'
-            }
-        }).then((response)=>{
-            console.log(response);
-            return response.json()
-        }).then((json)=>{
-            console.log(json);
-            return json;
-        }).catch((err)=>{
-            console.log(err);
-        });
+        // fetch('https://us-central1-wunicorns-df883.cloudfunctions.net/helloWorld', {
+        //     mode: 'no-cors',
+        //     credentials: 'include',
+        //     headers:{
+        //         'Content-Type': 'application/json'
+        //     }
+        // }).then((response)=>{
+        //     console.log(response);
+        //     return response.json()
+        // }).then((json)=>{
+        //     console.log(json);
+        //     return json;
+        // }).catch((err)=>{
+            
+        // });
     }
 
     render(){
@@ -69,11 +69,13 @@ class Home extends React.Component {
 
                     </main>
 
-                    <Footer 
-
-                    />
 
                 </Container>
+
+                <Footer 
+
+                />
+                
             </React.Fragment>
         )
     }
