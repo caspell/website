@@ -5,19 +5,22 @@ import Divider from '@mui/material/Divider';
 
 import { withStyles } from '@mui/styles';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-
 import Header from '../Layout/Default/Header';
 import Footer from '../Layout/Default/Footer';
 
 import Main from './Main';
-import Nft from './Nft';
-import Activities from './Activities';
+import About from './About';
+import Roadmap from './Roadmap';
 
-// img6.jpg
+import NavStepper from '../../components/NavStepper';
+
+import jquery from 'jquery';
+import $ from 'jquery';
+
 const styles = {
-
+    cursor: {
+        cursor: "pointer"
+    }
 };
 
 class Home extends React.Component {
@@ -44,9 +47,10 @@ class Home extends React.Component {
     }
 
     render(){
-        // const {classes} = this.props;
+        // const classes = useStyles();
         return (
             <React.Fragment>
+
                 <CssBaseline />
 
                 <Header
@@ -55,17 +59,19 @@ class Home extends React.Component {
                 
                 <Container className="container">
 
+                    <NavStepper />
+
                     <main>
 
                         <Main />
 
                         <Divider variant="middle" />
 
-                        <Nft />
+                        <About />
 
                         <Divider variant="middle" />
 
-                        <Activities />
+                        <Roadmap />
 
                     </main>
 

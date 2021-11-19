@@ -22,14 +22,14 @@ const images = [
     "images/img7.jpg"
 ]
 
-export default function Nft(props) {
+export default function About(props) {
 
     return (
         <React.Fragment>
-            <section id="nft" className="text-center">
+            <section id="about" className="text-center">
                 <div className="row row-cols-1 mb-3 pt-100">
 
-                    <h1 className="mb-3">NFT</h1>
+                    <h1 className="mb-3">About</h1>
 
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         <ThemeProvider theme={lightTheme}>

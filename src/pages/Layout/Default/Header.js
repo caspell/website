@@ -1,57 +1,19 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
+import Link from '@mui/material/Link';
 import { withStyles, makeStyles } from '@mui/styles';
 
 import { useNavigate, useLocation } from 'react-router-dom';
 
-// import { SmoothScrollContext } from '../../../contexts/SmoothScroll.context'
-// import LocomotiveScroll from 'locomotive-scroll';
-
-import jquery from 'jquery';
-import $ from 'jquery';
-
+// import DescDrawer from '../../../components/DescDrawer';
 
 const useStyles = makeStyles((theme) => ({
-  cursor: {
-    cursor: "pointer"
-  }
+  
 }));
 
 function Header(props) {
-  // const { scroll } = useContext(SmoothScrollContext)
-
-  const classes = useStyles();
-
-  const outerDivRef = useRef();
-  const [scrollY, setScrollY] = useState(0);
-
-  const clickHandler = (pageId) => {
-      
-    return (e)=>{
-
-      var target = $(pageId);
-      target = target.length ? target : $('[name=' + pageId + ']');
-      if (target.length) {
-        e.preventDefault();
-
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 600, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
-        });
-      }
-    }
-  }
 
   useEffect(()=>{
-    
     
 
   });
@@ -70,9 +32,9 @@ function Header(props) {
           </a>
 
           <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">            
-            <a onClick={clickHandler('#main')} className={classes.cursor + " me-3 py-2 text-dark text-decoration-none"}>Home</a>
-            <a onClick={clickHandler('#nft')} className={classes.cursor + " me-3 py-2 text-dark text-decoration-none"}>NFT</a>
-            <a onClick={clickHandler('#activities')} className={classes.cursor + " py-2 text-dark text-decoration-none"}>Activities</a>
+            <Link href="/" className={" me-3 py-2 text-dark text-decoration-none"}> Home </Link>
+            <Link href="/nft" className={" me-3 py-2 text-dark text-decoration-none"}> NFT </Link>
+            <Link href="/activities" className={" py-2 text-dark text-decoration-none"}> Activities </Link>
           </nav>
 
         </div>

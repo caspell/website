@@ -36,3 +36,95 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  font-family: "Lucida Console", "Courier New", monospace !important;
+  font-size: 1.3rem !important;
+}
+
+.sample_logo .sample_icon {
+  margin-right:10px;
+}
+
+header {
+  background: linear-gradient(180deg, #eee, #fff 100px, #fff);    
+}
+
+header > div {
+  padding: 0px 20px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+main section {
+  min-height: 100vh;
+}
+
+.image_holder {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.image_holder img {
+  width: 100%;
+}
+
+.nft_holder {
+  /* width: 300px; */
+  margin: 0 auto;
+}
+
+.nft_holder img {
+  width: 100%;
+}
+
+
+.activities {
+  height:500px;
+  padding: 30px 0px;
+}
+
+.footer {
+  padding: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section .pt-100 {
+      padding-top:150px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section .pt-100 {
+      padding-top:100px;
+  }   
+}
+
+
+
+
+.curtain {
+  min-height: 100hv;
+}

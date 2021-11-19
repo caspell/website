@@ -20,14 +20,14 @@ export default function Roadmap(props) {
 
     return (
         <React.Fragment>
-            <section id="activities" className="text-center">
+            <section id="roadmap" className="text-center">
                 <div className="row row-cols-1 mb-3 pt-100">
 
-                    <h1>Activities</h1>
+                    <h1>Roadmap</h1>
 
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
 
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
 
                     <Timeline position="alternate">
                         <TimelineItem>
