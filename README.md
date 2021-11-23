@@ -1,17 +1,18 @@
 ## development
 
+### source download
 
-    `install nodejs to local`
+    install nodejs to local
 
-### `git clone <project>`
+    git clone <project>
 
-download sources
+### download sources
 
-### `npm install`
+    npm install
 
-make development environment
+### make development environment
 
-### `npm start`
+    npm start
 
 Launches the project from source.<br />
 can set `PORT` environment variable.<br />
@@ -19,7 +20,7 @@ can set `PORT` environment variable.<br />
 
 ## deploy
 
-### `npm run build`
+    npm run build
 
 Compressed sources are stored in the build folder.
 execute command `serve -s build` can open local website.
